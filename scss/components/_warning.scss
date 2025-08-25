@@ -1,0 +1,95 @@
+.warning {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.warning-list {
+  display: flex;
+  gap: 30px;
+}
+
+.warning-title {
+  color: var(--text-color);
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  width: 270px;
+  margin-bottom: 10px;
+  
+}
+
+.warning-text {
+  color: var(--subtext-color);
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+  width: 270px;
+  height: 72px;
+}
+
+.warning-art1::before {
+  content: "";
+  display: block;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background: #f5f4fa;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("../img/antenna.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70px 70px;
+  margin-bottom: 30px;
+}
+.warning-art2::before {
+  content: "";
+  display: block;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background: #f5f4fa;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("../img/clock.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70px 70px;
+  margin-bottom: 30px;
+}
+.warning-art3::before {
+  content: "";
+  display: block;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background: #f5f4fa;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("../img/diagrama.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70px 70px;
+  margin-bottom: 30px;
+}
+.warning-art4::before {
+  content: "";
+  display: block;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background: #f5f4fa;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("../img/astronaut.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70px 70px;
+  margin-bottom: 30px;
+}
