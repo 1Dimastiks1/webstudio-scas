@@ -45,15 +45,15 @@
 
 
 .header-link1:hover {
-  color: var(--subtitle-color);
+  color:   $subtitle-color;
 
 }
 .header-link2:hover {
-  color: var(--subtitle-color);
+  color:   $subtitle-color;
 
 }
 .header-link3:hover {
-  color: var(--subtitle-color);
+  color:   $subtitle-color;
 
 }
 .header-link1:hover::after{
@@ -69,11 +69,11 @@ opacity: 1;
 
 
 .header-email:hover {
-  color: var(--subtitle-color);
+  color: $subtitle-color;
 }
 
 .header-title {
-  color: var(--text2-color);
+
   font-family: Raleway;
   font-size: 26px;
   font-style: normal;

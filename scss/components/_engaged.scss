@@ -1,5 +1,5 @@
 .engaged-title {
-  color: var(--text-color);
+  color: $text-color;
   text-align: center;
   font-family: Roboto;
   font-size: 36px;
@@ -39,7 +39,7 @@ background-color: #2F303ACC ;
 bottom: 68px;
 }
 .engaged-text {
-  color: #FFF;
+  color: $title-color;
 text-align: center;
 font-family: Roboto;
 font-size: 14px;

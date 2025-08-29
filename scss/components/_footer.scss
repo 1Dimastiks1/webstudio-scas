@@ -1,11 +1,11 @@
 .footer {
-  background: var(--bg-color);
+  background: $bg-color;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
 .footer-title {
-  color: var(--title-color);
+  color: $title-color;
   font-family: Raleway;
   font-size: 26px;
   font-style: normal;
@@ -32,7 +32,7 @@ width: 20px;
 }
 
 .footer-span {
-  color: var(--subtitle-color);
+  color: $subtitle-color;
   font-family: Raleway;
   font-size: 26px;
   font-style: normal;
@@ -42,7 +42,7 @@ width: 20px;
 }
 
 .foooter-address {
-  color: var(--title-color);
+  color: $title-color;
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;

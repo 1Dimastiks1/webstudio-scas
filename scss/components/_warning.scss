@@ -8,7 +8,7 @@
 }
 
 .warning-title {
-  color: var(--text-color);
+  color: $text-color;
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
@@ -22,7 +22,7 @@
 }
 
 .warning-text {
-  color: var(--subtext-color);
+  color: $subtext-color;
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
