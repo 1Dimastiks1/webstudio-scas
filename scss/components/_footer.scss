@@ -2,9 +2,7 @@
   background: $bg-color;
   padding-top: 60px;
   padding-bottom: 60px;
-}
-
-.footer-title {
+&__title {
   color: $title-color;
   font-family: Raleway;
   font-size: 26px;
@@ -13,7 +11,7 @@
   line-height: normal;
   letter-spacing: 0.78px;
 }
-.footer-link-title {
+&_link_title {
   color: #fff;
   font-family: Roboto;
   font-size: 14px;
@@ -24,14 +22,14 @@
   text-transform: uppercase;
 }
 
-.footer-img {
+&__img {
 width: 20px;
   height: 20px;
   fill: #eee;
   
 }
 
-.footer-span {
+&__span {
   color: $subtitle-color;
   font-family: Raleway;
   font-size: 26px;
@@ -41,7 +39,7 @@ width: 20px;
   letter-spacing: 0.78px;
 }
 
-.foooter-address {
+&__address {
   color: $title-color;
   font-family: Roboto;
   font-size: 14px;
@@ -54,7 +52,7 @@ width: 20px;
   margin-top: 20px;
 }
 
-.footer-mail {
+&__mail {
   color: rgba(255, 255, 255, 0.6);
   font-family: Roboto;
   font-size: 14px;
@@ -67,7 +65,7 @@ width: 20px;
   flex-shrink: 0;
   margin-top: 9px;
 }
-.footer-link-item {
+&_link_item {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   width: 44px;
@@ -78,7 +76,8 @@ width: 20px;
    transition: background-color  250ms cubic-bezier(0.4, 0, 0.2, 1), color  250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow  250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-link-item:hover {
+
+&_link_item:hover {
   border-radius: 50%;
   background-color: var(--subtitle-color);
   width: 44px;
@@ -88,7 +87,7 @@ width: 20px;
   justify-content: center;
 }
 
-.footer-tel {
+&__tel {
   color: rgba(255, 255, 255, 0.6);
   font-family: Roboto;
   font-size: 14px;
@@ -100,22 +99,22 @@ width: 20px;
   height: 21px;
   margin-top: 9px;
 }
-.footer-link {
+&__link {
   margin-left: 70px;
 }
-.footer-list-link {
+&_list_link {
   display: flex;
   gap: 10px;
   margin-top: 20px;
 }
 
-.footer-container {
+&__container {
   display: flex;
 }
-.footer_field {
+&_field {
   margin-left: 94px;
 }
-.footer_subtitle {
+&_subtitle {
   color: #FFF;
 font-family: "Roboto";
 font-size: 14px;
@@ -126,11 +125,12 @@ letter-spacing: 0.42px;
 text-transform: uppercase;
 margin-bottom: 20px;
 }
-.footer_form {
+&_form {
   display: flex;
   gap: 12px;
 }
-.footer_label {
+
+&_label {
   width: 358px;
 height: 50px;
 border-radius: 4px;
@@ -140,7 +140,7 @@ box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 display: flex;
 align-items: center;
 }
-.footer_input {
+&_input {
 color: rgba(255, 255, 255, 0.60);
 font-family: "Roboto";
 font-size: 16px;
@@ -153,7 +153,8 @@ border: none;
 outline: none;
 background: #2F303A;
 }
-.footer_btn {
+
+&_btn {
   color: #FFF;
 text-align: center;
 font-family: "Roboto";
@@ -172,8 +173,10 @@ align-items: center;
 justify-content: center;
 gap: 10px;
 }
-.footer_btn_icon {
+&_btn_icon {
   width: 24px;
 height: 24px;
 fill: #FFF;
 }
+}
+

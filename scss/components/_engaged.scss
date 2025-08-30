@@ -1,4 +1,12 @@
-.engaged-title {
+
+.engaged {
+  padding-bottom: 94px;
+  
+  &__list {
+  display: flex;
+  gap: 30px;
+}
+&__title {
   color: $text-color;
   text-align: center;
   font-family: Roboto;
@@ -11,26 +19,17 @@
   margin-bottom: 50px;
 }
 
-.engaged {
-  padding-bottom: 94px;
-}
-.engaged-list {
-  display: flex;
-  gap: 30px;
-}
-
-.engaged-text1 {
-
+&__text1 {
 padding-left: 107px;
 padding-right: 107px;
 }
 
-.engaged-text3 {
+&__text3 {
   padding-left: auto;
 padding-right: auto;
 }
 
-.engaged-box {
+&__box {
 width: 370px;
 height: 70px;
 position: relative;
@@ -38,7 +37,7 @@ z-index: 678;
 background-color: #2F303ACC ;
 bottom: 68px;
 }
-.engaged-text {
+&__text {
   color: $title-color;
 text-align: center;
 font-family: Roboto;
@@ -53,10 +52,12 @@ padding-bottom: 27px;
 
 }
 
-.engaged-photo {
+
+&__photo {
   width: 370px;
   height: 294px;
   display: block;
   background: url(<path-to-image>) rgb(255, 255, 255) 50% / cover no-repeat;
   position: relative;
+}
 }
