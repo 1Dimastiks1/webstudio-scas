@@ -41,25 +41,14 @@ width: 20px;
 
 &__address {
   color: $title-color;
-  font-family: Roboto;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.42px;
-  width: 231px;
+@extend %mail;
   height: 21px;
   margin-top: 20px;
 }
 
 &__mail {
-  color: rgba(255, 255, 255, 0.6);
-  font-family: Roboto;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.42px;
+@extend %mail;
+      color: rgba(255, 255, 255, 0.6);
   width: 136px;
   height: 21px;
   flex-shrink: 0;
@@ -89,12 +78,7 @@ width: 20px;
 
 &__tel {
   color: rgba(255, 255, 255, 0.6);
-  font-family: Roboto;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.42px;
+@extend %mail;
   width: 231px;
   height: 21px;
   margin-top: 9px;

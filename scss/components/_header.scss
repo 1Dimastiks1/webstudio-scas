@@ -42,23 +42,23 @@
   }
 
   &__link1:hover {
-    color: $subtitle-color;
+@extend %links;
   }
   &__link2:hover {
-    color: $subtitle-color;
+@extend %links;
   }
   &__link3:hover {
-    color: $subtitle-color;
+@extend %links;
   }
   &__link1:hover::after {
-    opacity: 1;
+@extend %link;
   }
 
   &__link2:hover::after {
-    opacity: 1;
+ @extend %link;
   }
   &__link3:hover::after {
-    opacity: 1;
+@extend %link;
   }
 
   &__email:hover {
@@ -75,41 +75,20 @@
   }
 
   &__link1 {
-    color: var(--text1-color);
-    font-family: Roboto;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.28p;
-    position: relative;
+  @extend %link_text;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   &__link2 {
-    color: var(--text1-color);
-    font-family: Roboto;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.28p;
-    position: relative;
+  @extend %link_text;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   &__link3 {
-    color: var(--text1-color);
-    font-family: Roboto;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.28p;
-    position: relative;
+  @extend %link_text;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
