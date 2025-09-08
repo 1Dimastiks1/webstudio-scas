@@ -1,0 +1,17 @@
+@mixin flex-box($distance: 0, $vertical: center, $content: center, $direction: row,  ) {
+display: flex;
+flex-wrap: wrap;
+gap: $DISTANCE;
+align-items: $vertical;
+justify-content: $content;
+flex-direction: $direction;
+}
+@mixin text($color: $text-color, $size: 0, $height: normal, $spacing: 0, $weight: 400) {
+    color: $color;
+     font-style: normal;
+        font-family: "Roboto";
+        font-size: $size;
+        line-height: $height;
+        letter-spacing: $spacing;
+        font-weight: $weight;
+}

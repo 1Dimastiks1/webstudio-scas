@@ -5,6 +5,9 @@
   &__list {
   display: flex;
   gap: 30px;
+  
+    @include flex-box ($DISTANCE: 30px,);
+
 }
 
 &__title {

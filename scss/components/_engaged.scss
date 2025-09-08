@@ -3,8 +3,8 @@
   padding-bottom: 94px;
   
   &__list {
-  display: flex;
-  gap: 30px;
+    @include flex-box ($DISTANCE: 30px,);
+
 }
 &__title {
   color: $text-color;
@@ -38,6 +38,7 @@ background-color: #2F303ACC ;
 bottom: 68px;
 }
 &__text {
+      @include text($color: $title-color, $size: 14px, $spacing: 0.42px, $weight: 700);
   color: $title-color;
 text-align: center;
 font-family: Roboto;
