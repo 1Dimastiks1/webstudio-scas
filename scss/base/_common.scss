@@ -5,12 +5,22 @@
 }
 
 .conteiner {
-  width: 1200px;
-  /* border: solid red; */
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+  @media screen and (min-width: 768px)  {
+    width: 738px
+padding-left: 15px
+  padding-right: 15px
+}
+@media  and (min-width: 1280px) {
+width: 1200px;
+padding-left: 15px;
+padding-right: 15px;
 }
 
 .body {
