@@ -1,7 +1,14 @@
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
-  border-bottom: solid #ececec;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #7575754e;
+  
+
+  @media screen and (min-width: 768px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+
 
   &__logo {
     color: #000;
@@ -11,7 +18,7 @@
     letter-spacing: 0.78px;
     text-decoration: none;
     transform: translateY(-350%);
-    animation: header-link 2s forwards;
+    animation: header-link 2s forwards; 
   }
   &__logo__color {
     color: #2196f3;
@@ -31,15 +38,24 @@
     animation: header-link 2s forwards;
   }
   &__conteiner {
-    @include flex-box ($vertical: center,);
-    // display: flex;
-    // align-items: center;
+    display: flex;
+    align-items: center;
   }
 
   &__navigation {
-    margin-left: 93px;
-    display: flex;
+   
     width: 100%;
+      display: none;
+
+    @media screen and (min-width: 768px) {
+      margin-left: 87px;
+       display: flex;
+    }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 92px;
+
+  }
   }
 
   &__link1:hover {
@@ -139,6 +155,36 @@
   &__contact__link__tell:hover {
     color: #2196f3;
   }
+  &__burger {
+    margin-left: auto;
+    background-color: white;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  
+}
+
+  
+  &__burger__svg {
+        fill: #000;
+   
+    width: 24px;
+    height: 16px;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+    &__menu {
+  
+ 
+    background-color: white;
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+
+
 
   &__contact__icon {
     margin-right: 10px;
@@ -191,6 +237,9 @@
     gap: 50px;
     margin-right: auto;
     align-items: center;
+
+
+
   }
   &__link:hover,
   &__link:focus {
@@ -200,8 +249,17 @@
   }
   &__contact__list {
     display: flex;
-    align-items: center;
 
-    margin-left: auto;
+    @media screen and (min-width: 768px) {
+      flex-direction: column;
+      margin-left: 96px;
+      gap: 10px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-left: 315px;
+      flex-direction: row;
+      gap: 30px;
+    }
   }
 }

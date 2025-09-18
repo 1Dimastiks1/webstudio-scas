@@ -1,4 +1,4 @@
-@mixin flex-box($distance: 0, $vertical: center, $content: center, $direction: row,  ) {
+@mixin flex-box($DISTANCE: 0, $vertical: center, $content: center, $direction: row,  ) {
 display: flex;
 flex-wrap: wrap;
 gap: $DISTANCE;
