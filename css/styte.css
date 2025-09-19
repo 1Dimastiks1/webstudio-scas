@@ -4,6 +4,10 @@ ul {
   padding: 0px;
 }
 
+input {
+  box-sizing: border-box;
+}
+
 p,
 h1,
 h2,
@@ -35,7 +39,6 @@ a {
 }
 
 .conteiner {
-  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -328,12 +331,6 @@ a {
   background-image: linear-gradient(to bottom, rgba(48, 47, 57, 0.3)), url("../img/background.jpg");
   background-size: 100% 600px;
 }
-@media screen and (min-width: 768px) {
-  .effect {
-    padding-top: 118px;
-    padding-bottom: 118px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .effect {
     padding-top: 200px;
@@ -344,15 +341,12 @@ a {
   color: #ffffff;
   text-align: center;
   font-family: Roboto;
-  font-size: 44px;
-  font-style: normal;
   font-weight: 900;
-  line-height: 60px;
-  max-width: 696px;
-  letter-spacing: 2.64px;
   text-transform: uppercase;
-  width: 696px;
-  margin-bottom: 30px;
+  font-size: 26px;
+  line-height: 162%;
+  letter-spacing: 0.06em;
+  max-width: 360px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -379,6 +373,7 @@ a {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   width: 216px;
   height: 50px;
+  margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -536,6 +531,17 @@ a {
   }
 }
 
+.team__title {
+  color: var(--text1-color);
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.08px;
+  margin-bottom: 50px;
+}
 @media screen and (min-width: 1200px) {
   .team__title {
     color: var(--text1-color);
@@ -673,6 +679,7 @@ a {
   flex-direction: column;
   /* margin-right: 70px; */
   margin-bottom: 60px;
+  margin-left: 60px;
 }
 .footer__title {
   color: #ffffff;
@@ -682,6 +689,7 @@ a {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.78px;
+  margin-left: 39px;
 }
 .footer_link_title {
   color: #fff;
@@ -692,6 +700,7 @@ a {
   line-height: normal;
   letter-spacing: 0.42px;
   text-transform: uppercase;
+  margin-left: 39px;
 }
 .footer__img {
   width: 20px;
@@ -711,6 +720,7 @@ a {
   color: #ffffff;
   height: 21px;
   margin-top: 20px;
+  margin-left: 15px;
 }
 .footer__mail {
   color: rgba(255, 255, 255, 0.6);
@@ -726,6 +736,7 @@ a {
   font-weight: 400;
   text-decoration: none;
   margin-bottom: 9px;
+  margin-left: 45px;
 }
 .footer_link_item {
   border-radius: 50%;
@@ -751,9 +762,12 @@ a {
   width: 231px;
   height: 21px;
   margin-top: 9px;
+  margin-left: 51px;
 }
 .footer__link {
+  margin-right: 39px;
   margin-bottom: 60px;
+  margin-left: 60px;
 }
 .footer_list_link {
   margin-top: 20px;
@@ -769,10 +783,21 @@ a {
   gap: 0;
   justify-content: space-between;
   flex-direction: column;
-  justify-items: flex-start;
+}
+@media screen and (min-width: 1280px) {
+  .footer__container {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    justify-content: space-between;
+    flex-direction: row;
+  }
 }
 .footer_field {
   margin-left: 94px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
 }
 .footer_subtitle {
   color: #FFF;
@@ -784,7 +809,7 @@ a {
   letter-spacing: 0.42px;
   text-transform: uppercase;
   margin-bottom: 20px;
-  margin-left: 20px;
+  margin-left: 147px;
 }
 .footer_form {
   display: flex;
@@ -935,8 +960,8 @@ a {
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
   padding: 14px 40px 40px 40px;
   z-index: 1;
-  width: 528px;
-  width: 469px;
+  width: 100%;
+  max-width: 469px;
   flex-shrink: 0;
 }
 

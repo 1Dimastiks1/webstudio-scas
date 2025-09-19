@@ -21,8 +21,8 @@
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
     padding: 14px 40px 40px 40px;
     z-index: 1;
-    width: 528px;
- width: 469px;
+width: 100%;
+max-width: 469px;
 flex-shrink: 0;
 }
 .is-hidden .modal {
