@@ -1,22 +1,23 @@
 
 .engaged {
-  padding-bottom: 94px;
+  display: none;
+  
+  @media screen and (min-width: 1280px) {
+      display: flex;
+      padding-top: 94px;
+padding-bottom: 94px;
+  }
+
   
   &__list {
     @include flex-box ($DISTANCE: 30px,);
 
 }
 &__title {
-  color: $text-color;
-  text-align: center;
-  font-family: Roboto;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 1.08px;
-
-  margin-bottom: 50px;
+    @include title($size: 14px, $height: normal, $spacing: 0.42px);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 &__text1 {
@@ -38,7 +39,6 @@ background-color: #2F303ACC ;
 bottom: 68px;
 }
 &__text {
-      @include text($color: $title-color, $size: 14px, $spacing: 0.42px, $weight: 700);
   color: $title-color;
 text-align: center;
 font-family: Roboto;

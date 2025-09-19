@@ -2,6 +2,19 @@
   background: $bg-color;
   padding-top: 60px;
   padding-bottom: 60px;
+
+  &__info {
+    @include flex-position(
+      $direction: column,
+      $vertically: none,
+      $horizontally: none
+    );
+    /* margin-right: 70px; */
+    margin-bottom: 60px;
+ 
+  }
+
+
 &__title {
   color: $title-color;
   font-family: Raleway;
@@ -52,7 +65,9 @@ width: 20px;
   width: 136px;
   height: 21px;
   flex-shrink: 0;
-  margin-top: 9px;
+      @include text($color: #fff, $size: 14px, $height: 24px, $spacing: 0.42px);
+    text-decoration: none;
+    margin-bottom: 9px;
 }
 &_link_item {
   border-radius: 50%;
@@ -84,15 +99,18 @@ width: 20px;
   margin-top: 9px;
 }
 &__link {
-  margin-left: 70px;
+
+   margin-bottom: 60px;
 }
 &_list_link {
-      @include flex-box ($DISTANCE: 10px,);
   margin-top: 20px;
+      @include flex-position($gap: 10px, $vertically: none, $horizontally: none);
 }
 
 &__container {
-  display: flex;
+
+    @include flex-position($horizontally: space-between, $direction: column);
+    justify-items: flex-start;
 }
 &_field {
   margin-left: 94px;
@@ -107,6 +125,7 @@ line-height: normal;
 letter-spacing: 0.42px;
 text-transform: uppercase;
 margin-bottom: 20px;
+margin-left: 20px;
 }
 &_form {
   display: flex;
@@ -161,5 +180,6 @@ gap: 10px;
 height: 24px;
 fill: #FFF;
 }
+
 }
 

@@ -1,55 +1,62 @@
 .warning {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
   &__list {
-  display: flex;
-  gap: 30px;
-  
-    @include flex-box ($DISTANCE: 30px,);
+    display: flex;
 
-}
+    @include flex-box($DISTANCE: 30px);
 
-&__title {
-  color: $text-color;
-  font-family: Roboto;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.42px;
-  text-transform: uppercase;
-  width: 270px;
-  margin-bottom: 10px;
-  
-}
-&__text {
-  color: $subtext-color;
-  font-family: Roboto;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.42px;
-  width: 270px;
-  height: 72px;
-}
- 
-&__art1::before {
-@extend %art;
+    @media screen and (min-width: 768px) {
+      @include flex-box($DISTANCE: 30px, $vertical: none, $content: none);
+      flex-wrap: wrap;
+    }
+  }
+
+  &__title {
+    color: $text-color;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    width: 270px;
+    margin-bottom: 10px;
+  }
+  &__text {
+    color: $subtext-color;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+    width: 270px;
+    height: 72px;
+  }
+
+  &__art1::before {
+    @extend %art;
     background-image: url("../img/antenna.webp");
-}
-&__art2::before {
-@extend %art;
-  background-image: url("../img/clock.webp");
-
-}
-&__art3::before {
-@extend %art;
+  }
+  &__art2::before {
+    @extend %art;
+    background-image: url("../img/clock.webp");
+  }
+  &__art3::before {
+    @extend %art;
     background-image: url("../img/diagrama.webp");
-}
-&__art4::before {
-@extend %art;
-  background-image: url("../img/astronaut.webp");
-}
+  }
+  &__art4::before {
+    @extend %art;
+    background-image: url("../img/astronaut.webp");
+  }
 }

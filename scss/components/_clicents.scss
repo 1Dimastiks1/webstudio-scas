@@ -1,17 +1,25 @@
 .clicents {
-  padding-top: 94px;
+padding-top: 60px;
+padding-bottom: 60px;
+
+  @media screen and (min-width: 1280px) {
+      padding-top: 94px;
   padding-bottom: 94px;
+  }
 }
 .clients-title {
   color: $text-color;
   text-align: center;
   font-family: "Roboto";
-  font-size: 36px;
+  font-size: 28px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  letter-spacing: 1.08px;
-  margin-bottom: 50px;
+  letter-spacing: 0.84px;
+    margin-bottom: 30px;
+    @media screen and (min-width: 1280px ) {
+        margin-bottom: 50px;
+    }
 }
 
 .clients_icons {
@@ -28,8 +36,8 @@
 }
 
 .clients_list {
-
       @include flex-box ($DISTANCE: 30px,);
+      flex-wrap: wrap;
 }
 .clients_item:hover {
   border-radius: 4px;

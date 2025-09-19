@@ -15,3 +15,19 @@ flex-direction: $direction;
         letter-spacing: $spacing;
         font-weight: $weight;
 }
+@mixin title($color: $title-color, $size: 0, $height: normal, $spacing: 0, $weight: 0) {
+    color: $color;
+     font-style: normal;
+        font-family: "Roboto";
+        font-size: $size;
+        line-height: $height;
+        letter-spacing: $spacing;
+        font-weight: $weight;
+}
+@mixin flex-position($gap: 0, $vertically:center, $horizontally:center, $direction:row ) {
+    display: flex;
+        align-items: $vertically;
+        gap: $gap;
+        justify-content: $horizontally;
+        flex-direction: $direction;
+}

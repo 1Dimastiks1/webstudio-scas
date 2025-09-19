@@ -1,9 +1,16 @@
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+   padding-top: 60px;
+  padding-bottom: 60px;
   background: #f5f4fa;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+  padding-bottom: 94px; 
+  }
 }
 .team__title {
+
+  @media screen and (min-width: 1200px) {
   color: var(--text1-color);
   text-align: center;
   font-family: "Roboto";
@@ -13,12 +20,27 @@
   line-height: normal;
   letter-spacing: 1.08px;
   margin-bottom: 50px;
+  }
 }
+
+.team__item {
+width: 270px;
+height: 428px;
+}
+
 .team__container {
 }
 .team__list {
 
-    @include flex-box ($direction: 30px,);
+  @include flex-box ($DISTANCE: 30px, $direction: column,);
+
+@media screen and (min-width: 768px) {
+
+ @include flex-box($DISTANCE: 30px);
+ flex-wrap: wrap;
+
+}
+ 
 
 }
 .team__item {
@@ -37,7 +59,7 @@ flex-shrink: 0;
 }
 
 .team__list__title {
-  color: $text-color;
+   color: $text-color;
   text-align: center;
   font-family: "Roboto";
   font-size: 16px;
@@ -50,11 +72,8 @@ flex-shrink: 0;
 .team__text {
       @include text ($color: $text-color, $size: 16px, $spacing: 0.48px, $weight: 400);
   color: $text-color;
-
-  font-size: 16px;
-  font-style: normal;
-  letter-spacing: 0.48px;
-  margin-bottom: 16px;
+    text-align: center;
+    margin-bottom: 16px;
 }
 .team__box {
   
@@ -92,4 +111,11 @@ flex-shrink: 0;
   width: 20px;
   height: 20px;
   
+}
+@media screen and (min-width: 1200px) {
+
+.team__item {
+width: 270px;
+height: 428px;
+}
 }
