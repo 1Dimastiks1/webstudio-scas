@@ -788,6 +788,17 @@ a {
   justify-content: space-between;
   flex-direction: column;
 }
+@media screen and (min-width: 768px) {
+  .footer__container {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 102px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer__container {
     flex-wrap: nowrap;
@@ -796,20 +807,6 @@ a {
     gap: 0;
     justify-content: space-between;
     flex-direction: row;
-  }
-}
-@media screen and (min-width: 768px) {
-  .footer__container {
-    display: flex;
-    align-items: center;
-    gap: 0;
-    justify-content: space-around;
-    flex-direction: row;
-  }
-}
-@media screen and (min-width: 768px) {
-  .footer__container {
-    margin-bottom: 102px;
   }
 }
 .footer_field {

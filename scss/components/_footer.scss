@@ -117,8 +117,16 @@
   }
 
   &__container {
-    @media screen and (min-width: 1200px) {
 
+
+    @include flex-position($horizontally: space-between, $direction: column);
+
+    @media screen and (min-width: 768px) {
+      @include flex-position($horizontally: space-around);
+      flex-wrap: wrap;
+      margin-bottom: 102px;
+    }
+        @media screen and (min-width: 1200px) {
       flex-wrap:nowrap;
       @include flex-position(
         $horizontally: space-between,
@@ -127,15 +135,6 @@
 
     }
 
-    @include flex-position($horizontally: space-between, $direction: column);
-
-    @media screen and (min-width: 768px) {
-      @include flex-position($horizontally: space-around);
-    
-    }
-    @media screen and (min-width: 768px) {
-      margin-bottom: 102px;
-    }
   }
   &_field {
     margin-left: 94px;
