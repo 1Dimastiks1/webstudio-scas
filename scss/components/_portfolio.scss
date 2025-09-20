@@ -75,9 +75,10 @@
   padding-right: 22px;
   padding-top: 6px;
   padding-bottom: 6px;
-   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color  250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow  250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 
 .list-photo {
   flex-basis: 370px;
@@ -114,36 +115,39 @@
 }
 
 .list-list {
-    list-style-type: none;
-  display: flex;
+  @include flex-position($gap: 30px);
+  list-style-type: none;
   flex-wrap: wrap;
   align-self: center;
-  gap: 30px;
   padding-top: 50px;
 }
 .list-item:hover {
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12),
     0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
-
 }
 
 .list-item {
-  flex-shrink: 0;
-  flex-basis: calc((100% - (30px * 2)) / 3);
   border: 1px solid #eee;
- 
+  max-width: 370px;
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - (30px * 2)) / 3);
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - (30px * 2)) / 3);
+  }
 }
 .photo-scroll {
-position: fixed;
-bottom: 0;
-right: 0;
-      width: 43px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 43px;
   height: 41px;
-  background-color: #2196F3;
-width: 96px;
-height: 96px;
-border-radius: 50%;
-
+  background-color: #2196f3;
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
 }
 .item-overlay:hover {
   display: block;
@@ -155,18 +159,17 @@ border-radius: 50%;
   left: 0;
   width: 100%;
   height: 100%;
-   background: rgba(33, 150, 243, 0.9);
+  background: rgba(33, 150, 243, 0.9);
   transform: translatey(100%);
   transition: transform 250ms ease-in-out;
 }
-
 
 .katolog-box:hover .item-overlay {
   transform: translatey(0);
 }
 
 .text-overlay {
-    width: 322px;
+  width: 322px;
   color: #fff;
   font-size: 18px;
   font-weight: 400;
@@ -176,6 +179,8 @@ border-radius: 50%;
 }
 
 .katolog-box {
-    position: relative;
+  position: relative;
   overflow: hidden;
 }
+
+

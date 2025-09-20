@@ -43,7 +43,6 @@ a {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: solid red;
 }
 @media screen and (min-width: 768px) {
   .conteiner {
@@ -702,6 +701,11 @@ a {
   text-transform: uppercase;
   margin-left: 39px;
 }
+@media screen and (min-width: 1200px) {
+  .footer_link_title {
+    margin-left: 0;
+  }
+}
 .footer__img {
   width: 20px;
   height: 20px;
@@ -784,13 +788,29 @@ a {
   justify-content: space-between;
   flex-direction: column;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    flex-wrap: nowrap;
+    display: flex;
+    align-items: flex-start;
+    gap: 0;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 768px) {
   .footer__container {
     display: flex;
     align-items: center;
     gap: 0;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__container {
+    margin-bottom: 102px;
   }
 }
 .footer_field {
@@ -800,7 +820,7 @@ a {
   flex-direction: column;
 }
 .footer_subtitle {
-  color: #FFF;
+  color: #fff;
   font-family: "Roboto";
   font-size: 14px;
   font-style: normal;
@@ -810,6 +830,11 @@ a {
   text-transform: uppercase;
   margin-bottom: 20px;
   margin-left: 147px;
+}
+@media screen and (min-width: 1200px) {
+  .footer_subtitle {
+    margin-left: 0;
+  }
 }
 .footer_form {
   display: flex;
@@ -836,10 +861,10 @@ a {
   margin-left: 16px;
   border: none;
   outline: none;
-  background: #2F303A;
+  background: #2f303a;
 }
 .footer_btn {
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-family: "Roboto";
   font-size: 16px;
@@ -848,7 +873,7 @@ a {
   line-height: 30px; /* 187.5% */
   letter-spacing: 0.96px;
   border-radius: 4px;
-  background: #2196F3;
+  background: #2196f3;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   width: 200px;
   height: 50px;
@@ -860,7 +885,7 @@ a {
 .footer_btn_icon {
   width: 24px;
   height: 24px;
-  fill: #FFF;
+  fill: #fff;
 }
 
 .clicents {
@@ -1260,11 +1285,14 @@ a {
 }
 
 .list-list {
-  list-style-type: none;
   display: flex;
+  align-items: center;
+  gap: 30px;
+  justify-content: center;
+  flex-direction: row;
+  list-style-type: none;
   flex-wrap: wrap;
   align-self: center;
-  gap: 30px;
   padding-top: 50px;
 }
 
@@ -1273,9 +1301,18 @@ a {
 }
 
 .list-item {
-  flex-shrink: 0;
-  flex-basis: calc((100% - 60px) / 3);
   border: 1px solid #eee;
+  max-width: 370px;
+}
+@media screen and (min-width: 1200px) {
+  .list-item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 768px) {
+  .list-item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
 
 .photo-scroll {
@@ -1284,7 +1321,7 @@ a {
   right: 0;
   width: 43px;
   height: 41px;
-  background-color: #2196F3;
+  background-color: #2196f3;
   width: 96px;
   height: 96px;
   border-radius: 50%;
