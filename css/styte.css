@@ -805,7 +805,6 @@ a {
     gap: 0;
     justify-content: space-around;
     flex-direction: row;
-    flex-wrap: wrap;
   }
 }
 @media screen and (min-width: 768px) {
@@ -829,7 +828,7 @@ a {
   letter-spacing: 0.42px;
   text-transform: uppercase;
   margin-bottom: 20px;
-  margin-left: 147px;
+  margin-left: 70px;
 }
 @media screen and (min-width: 1200px) {
   .footer_subtitle {
@@ -839,6 +838,13 @@ a {
 .footer_form {
   display: flex;
   gap: 12px;
+  flex-direction: column;
+  margin-right: 70px;
+}
+@media screen and (min-width: 1200px) {
+  .footer_form {
+    flex-direction: row;
+  }
 }
 .footer_label {
   width: 358px;
@@ -881,6 +887,7 @@ a {
   align-items: center;
   justify-content: center;
   gap: 10px;
+  margin-left: 70px;
 }
 .footer_btn_icon {
   width: 24px;

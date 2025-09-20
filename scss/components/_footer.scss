@@ -131,7 +131,7 @@
 
     @media screen and (min-width: 768px) {
       @include flex-position($horizontally: space-around);
-      flex-wrap: wrap;
+    
     }
     @media screen and (min-width: 768px) {
       margin-bottom: 102px;
@@ -142,6 +142,8 @@
     margin-bottom: 60px;
     display: flex;
     flex-direction: column;
+  
+    
   }
   &_subtitle {
     color: #fff;
@@ -153,7 +155,7 @@
     letter-spacing: 0.42px;
     text-transform: uppercase;
     margin-bottom: 20px;
-    margin-left: 147px;
+    margin-left: 70px;
 
     @media screen and (min-width: 1200px) {
       margin-left: 0;
@@ -162,6 +164,12 @@
   &_form {
     display: flex;
     gap: 12px;
+    flex-direction: column;
+    margin-right: 70px;
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+      
+    }
   }
 
   &_label {
@@ -173,6 +181,8 @@
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     display: flex;
     align-items: center;
+
+
   }
   &_input {
     color: rgba(255, 255, 255, 0.6);
@@ -206,10 +216,12 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
+    margin-left: 70px;
   }
   &_btn_icon {
     width: 24px;
     height: 24px;
     fill: #fff;
   }
+  
 }
