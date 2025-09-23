@@ -11,6 +11,7 @@
   display: flex;
   gap: 8px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .button-list:nth-child(1) {
   flex-basis: 73px;

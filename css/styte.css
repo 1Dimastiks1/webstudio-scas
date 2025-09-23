@@ -676,9 +676,8 @@ a {
   gap: 0;
   justify-content: none;
   flex-direction: column;
-  /* margin-right: 70px; */
   margin-bottom: 60px;
-  margin-left: 60px;
+  text-align: center;
 }
 .footer__title {
   color: #ffffff;
@@ -688,7 +687,6 @@ a {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.78px;
-  margin-left: 39px;
 }
 .footer_link_title {
   color: #fff;
@@ -699,17 +697,20 @@ a {
   line-height: normal;
   letter-spacing: 0.42px;
   text-transform: uppercase;
-  margin-left: 39px;
+  text-align: center;
 }
 @media screen and (min-width: 1200px) {
   .footer_link_title {
-    margin-left: 0;
+    text-align: left;
   }
 }
 .footer__img {
   width: 20px;
   height: 20px;
   fill: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .footer__span {
   color: #2196f3;
@@ -765,13 +766,9 @@ a {
   color: rgba(255, 255, 255, 0.6);
   width: 231px;
   height: 21px;
-  margin-top: 9px;
-  margin-left: 51px;
 }
 .footer__link {
-  margin-right: 39px;
   margin-bottom: 60px;
-  margin-left: 60px;
 }
 @media screen and (min-width: 768px) {
   .footer__link {
@@ -815,8 +812,6 @@ a {
   }
 }
 .footer_field {
-  margin-left: 94px;
-  margin-bottom: 60px;
   display: flex;
   flex-direction: column;
 }
@@ -830,23 +825,19 @@ a {
   letter-spacing: 0.42px;
   text-transform: uppercase;
   margin-bottom: 20px;
-  margin-left: 70px;
-}
-@media screen and (min-width: 768px) {
-  .footer_subtitle {
-    margin-left: 115px;
-  }
+  text-align: center;
 }
 @media screen and (min-width: 1200px) {
   .footer_subtitle {
-    margin-left: 0;
+    text-align: left;
   }
 }
 .footer_form {
   display: flex;
+  align-items: center;
   gap: 12px;
+  justify-content: center;
   flex-direction: column;
-  margin-right: 70px;
 }
 @media screen and (min-width: 1200px) {
   .footer_form {
@@ -854,7 +845,8 @@ a {
   }
 }
 .footer_label {
-  width: 358px;
+  width: 290px;
+  max-width: 450px;
   height: 50px;
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -866,6 +858,12 @@ a {
 @media screen and (min-width: 768px) {
   .footer_label {
     width: 450px;
+    height: 50px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer_label {
+    width: 358px;
     height: 50px;
   }
 }
@@ -900,12 +898,6 @@ a {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  margin-left: 70px;
-}
-@media screen and (min-width: 768px) {
-  .footer_btn {
-    margin-left: 120px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .footer_btn {
@@ -1007,17 +999,16 @@ a {
 }
 
 .modal {
-  transform: scale(1) translate(0, 0) rotate(0deg);
-  transition-property: transform, opacity;
-  transition-duration: 250ms;
+  min-width: 290px;
+  max-width: 450px;
   border-radius: 4px;
-  background: #FFF;
+  background: #ffffff;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
   padding: 14px 40px 40px 40px;
   z-index: 1;
-  width: 100%;
-  max-width: 469px;
-  flex-shrink: 0;
+  transform: scale(1);
+  transition-property: transform, opacity;
+  transition-duration: 2500ms;
 }
 
 .is-hidden .modal {
@@ -1040,7 +1031,7 @@ a {
 }
 
 .modal_button_close {
-  margin-left: 470px;
+  margin-left: auto;
   border: solid rgba(0, 0, 0, 0.1) 1px;
   border-radius: 50%;
   width: 30px;
@@ -1093,7 +1084,8 @@ a {
 .box {
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
-  width: 467px;
+  min-width: 255px;
+  max-width: 370px;
   height: 40px;
   display: flex;
   align-items: center;
@@ -1115,16 +1107,17 @@ a {
 }
 
 .modal_comment {
-  border: none;
-  outline: none;
   color: rgba(117, 117, 117, 0.5);
+  font-style: normal;
   font-family: "Roboto";
   font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
   line-height: normal;
   letter-spacing: 0.12px;
-  width: 448px;
+  font-weight: 400;
+  border: none;
+  outline: none;
+  min-width: 255px;
+  max-width: 370px;
   height: 120px;
   flex-shrink: 0;
   padding-left: 16px;
@@ -1137,36 +1130,35 @@ a {
 }
 
 .modal_label-confirm {
-  text-align: center;
   color: rgba(117, 117, 117, 0.5);
-  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-family: "Roboto";
   font-size: 12px;
-  font-weight: 400;
+  line-height: normal;
   letter-spacing: 0.12px;
+  font-weight: 400;
 }
 
 .modal_checkbox {
-  color: #757575;
+  color: #212121;
+  font-style: normal;
+  font-family: "Roboto";
+  font-size: 12px;
+  line-height: normal;
+  letter-spacing: 0.36px;
+  font-weight: 400;
   border-radius: 4px;
   fill: #212121;
-  margin-left: 7px;
-  color: #757575;
-  font-family: "Roboto";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.42px;
 }
 
 .modal_link {
-  color: #2196F3;
-  font-family: "Roboto";
-  font-size: 14px;
+  color: #2196f3;
   font-style: normal;
+  font-family: "Roboto";
+  font-size: 12px;
+  line-height: normal;
+  letter-spacing: 0.36px;
   font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.42px;
   text-decoration-line: underline;
   text-decoration-style: solid;
   -webkit-text-decoration-skip-ink: none;
@@ -1177,23 +1169,60 @@ a {
 }
 
 .modal_button {
-  margin-top: 30px;
-  border-radius: 4px;
-  background: #2196F3;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  color: #FFF;
-  text-align: center;
+  color: #fff;
+  font-style: normal;
   font-family: "Roboto";
   font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 30px; /* 187.5% */
+  line-height: 30px;
   letter-spacing: 0.96px;
+  font-weight: 700;
+  margin-top: 30px;
+  border-radius: 4px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  text-align: center;
   width: 200px;
   height: 50px;
-  margin-left: 120px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
+  .box {
+    max-width: 448px;
+  }
+  .modal_button_close {
+    margin-left: 450px;
+  }
+  .modal_comment {
+    max-width: 448px;
+  }
+  .modal_label-confirm {
+    text-align: center;
+  }
+  .modal__checkbox {
+    margin-left: 7px;
+    color: #212121;
+    font-style: normal;
+    font-family: "Roboto";
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+    font-weight: 400;
+  }
+  .modal_link {
+    color: #2196f3;
+    font-style: normal;
+    font-family: "Roboto";
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+    font-weight: 400;
+  }
+}
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
@@ -1209,6 +1238,7 @@ a {
   display: flex;
   gap: 8px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .button-list:nth-child(1) {
