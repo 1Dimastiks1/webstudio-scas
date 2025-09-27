@@ -11,7 +11,13 @@
     flex-direction: column;
     margin-bottom: 60px;
     text-align: center;
-  }
+
+    @media screen and (min-width: 1200px) {
+        text-align: start;
+        margin-bottom: 0;
+}
+  } 
+
 
   &__title {
     color: $title-color;
@@ -34,8 +40,10 @@
     text-transform: uppercase;
     text-align: center;
     @media screen and (min-width: 1200px) {
-      text-align: left;
-    }
+        text-align: start;
+      
+}
+
   }
 
   &__img {
@@ -62,19 +70,22 @@
     @extend %mail;
     height: 21px;
     margin-top: 20px;
-    margin-left: 15px;
+
   }
 
   &__mail {
     @extend %mail;
     color: rgba(255, 255, 255, 0.6);
-    width: 136px;
+    width: 232px;
     height: 21px;
     flex-shrink: 0;
     @include text($color: #fff, $size: 14px, $height: 24px, $spacing: 0.42px);
     text-decoration: none;
     margin-bottom: 9px;
-    margin-left: 45px;
+  @media screen and (min-width: 1200px) {
+    margin-top: 9px;
+  }
+
   }
   &_link_item {
     border-radius: 50%;
@@ -104,13 +115,19 @@
     @extend %mail;
     width: 231px;
     height: 21px;
- 
+   @media screen and (min-width: 1200px) {
+    margin-top: 9px;
+  }
   }
   &__link {
-    margin-bottom: 60px;
+   margin-bottom: 60px;
+    
     @media screen and (min-width: 768px) {
       margin-bottom: 120px;
     }
+   @media screen and (min-width: 1200px) {
+   margin-bottom: 0px;
+}
   }
   &_list_link {
     margin-top: 20px;
@@ -131,6 +148,7 @@
         $horizontally: space-between,
         $vertically: flex-start
       );
+      margin-bottom: 0;
     }
   }
   &_field {
