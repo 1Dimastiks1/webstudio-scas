@@ -363,7 +363,7 @@ a {
   gap: 32px;
 }
 .menu__link {
-  color: #ffffff;
+  color: #212121;
   font-style: normal;
   font-family: "Roboto";
   font-size: 40px;
@@ -418,11 +418,6 @@ a {
   font-weight: 500;
 }
 
-@media screen and (min-width: 768px) {
-  .burger {
-    display: none;
-  }
-}
 .effect {
   padding-top: 118px;
   padding-bottom: 118px;

@@ -47,7 +47,7 @@
   }
   &__link {
     @include text(
-      $color: $title-color,
+     
       $size: 40px,
       $spacing: 0.8px,
       $weight: 500
@@ -57,8 +57,8 @@
     color: $link-color;
   }
   &__contact {
-    // margin-top: 306px;
     margin-top: auto;
+
   }
   &__contact__list {
     display: flex;
@@ -104,8 +104,3 @@
   }
 }
 
-@media screen and (min-width: 768px) {
-  .burger {
-    display: none;
-  }
-}
