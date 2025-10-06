@@ -17,20 +17,20 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-   <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-<link rel="stylesheet" href="./css/styte.min.css">
+    <link rel="stylesheet" href="./css/styte.min.css" />
   </head>
   <body>
     <header class="header" id="header">
       <div class="conteiner header__conteiner">
-                 <a class="header__logo " href="./index.html"
-            ><span class="header__logo__color">Web</span>Studio</a
-          >
+        <a class="header__logo" href="./index.html"
+          ><span class="header__logo__color">Web</span>Studio</a
+        >
         <nav class="header__navigation">
           <ul class="header__list">
             <li class="header__item">
@@ -67,8 +67,10 @@
             </li>
           </ul>
         </nav>
-        <button class="header__burger">
-          <svg class="header__burger__svg"><use href="./img/icons.svg#icon-burger"></use></svg>
+        <button class="header__burger" data-menu-open>
+          <svg class="header__burger__svg">
+            <use href="./img/icons.svg#icon-burger"></use>
+          </svg>
         </button>
       </div>
     </header>
@@ -135,7 +137,9 @@
                 width="400"
               />
               <div class="engaged__box">
-                <p class="engaged__text engaged__text1" data-aos="fade-down" >Десктопні додатки</p>
+                <p class="engaged__text engaged__text1" data-aos="fade-down">
+                  Десктопні додатки
+                </p>
               </div>
             </li>
             <li class="engaged__item">
@@ -146,7 +150,9 @@
                 width="400"
               />
               <div class="engaged__box">
-                <p class="engaged__text engaged__text2" data-aos="fade-down" >Мобільні додатки</p>
+                <p class="engaged__text engaged__text2" data-aos="fade-down">
+                  Мобільні додатки
+                </p>
               </div>
             </li>
             <li class="engaged__item">
@@ -157,7 +163,9 @@
                 width="400"
               />
               <div class="engaged__box">
-                <p class="engaged__text engaged__text3" data-aos="fade-down">Дизайнерські рішення</p>
+                <p class="engaged__text engaged__text3" data-aos="fade-down">
+                  Дизайнерські рішення
+                </p>
               </div>
             </li>
           </ul>
@@ -165,7 +173,9 @@
       </section>
       <section class="team">
         <div class="conteiner">
-          <h2 class="team__title" data-aos="fade-down" data-aos-duration="2000">Наша команда</h2>
+          <h2 class="team__title" data-aos="fade-down" data-aos-duration="2000">
+            Наша команда
+          </h2>
           <div class="team__container">
             <ul class="team__list">
               <li class="team__item">
@@ -454,98 +464,136 @@
                   required
                 />
               </label>
-             
-                  <button class="footer_btn">
+
+              <button class="footer_btn">
                 Підписатися
                 <svg class="footer_btn_icon">
                   <use href="./img/icons.svg#icon-icon-send"></use>
                 </svg>
               </button>
-        
-            
             </form>
           </div>
         </div>
       </div>
-
     </footer>
-           <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-          <button class="modal_button_close" data-modal-close>
-            <svg class="modal_svg">
-              <use href="./img/icons.svg#icon-x"></use>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal_button_close" data-modal-close>
+          <svg class="modal_svg">
+            <use href="./img/icons.svg#icon-x"></use>
+          </svg>
+        </button>
+        <h3 class="modal_subtitle">Залиште свої дані, ми вам передзвонимо</h3>
+        <form action="" class="modal_form">
+          <label for="" class="modal_label"> Ім'я </label>
+          <div class="box">
+            <svg class="modal_icon">
+              <use href="./img/icons.svg#icon-person"></use>
             </svg>
-          </button>
-          <h3 class="modal_subtitle">
-            Залиште свої дані, ми вам передзвонимо
-          </h3>
-          <form action="" class="modal_form">
-            <label for="" class="modal_label">
-              Ім'я  </label>
-              <div class="box">
-                <svg class="modal_icon">
-                  <use
-                    href="./img/icons.svg#icon-person"
-                  ></use>
-                </svg>
-                <input type="text" class="modal_input" />
-              </div>
-          
-            <label for="" class="modal_label">
-              Телефон</label>
-              <div class="box">
-                <svg class="modal_icon">
-                  <use
-                    href="./img/icons.svg#icon-phone"
-                  ></use>
-                </svg>
-                <input type="tel" class="modal_input" />
-              </div>
-            
-            <label for="" class="modal_label">
-              Пошта </label>
-              <div class="box">
-                <svg class="modal_icon">
-                  <use
-                    href="./img/icons.svg#icon-evelope"
-                  ></use>
-                </svg>
-                <input type="email" class="modal_input" />
-              </div>
-           
-            <label for="" class="modal_label"> Коментар</label>
-            <textarea
-              class="modal_comment"
-              name=""
-              id=""
-              type="text"
-              placeholder="Введіть текст"
-              required
-            ></textarea>
-           <div class="modal_label-confirm">
-              <input type="checkbox" class="input_checkbox" required/>
-            
-               <label for="" class="modal_checkbox">  Погоджуюся з розсилкою та приймаю
-                   <a href="" class="modal_link">Умови договору</a>
-              </label>     
-           </div>
-            <button class="modal_button">Відправити</button>
-          </form>
+            <input type="text" class="modal_input" />
+          </div>
+
+          <label for="" class="modal_label"> Телефон</label>
+          <div class="box">
+            <svg class="modal_icon">
+              <use href="./img/icons.svg#icon-phone"></use>
+            </svg>
+            <input type="tel" class="modal_input" />
+          </div>
+
+          <label for="" class="modal_label"> Пошта </label>
+          <div class="box">
+            <svg class="modal_icon">
+              <use href="./img/icons.svg#icon-evelope"></use>
+            </svg>
+            <input type="email" class="modal_input" />
+          </div>
+
+          <label for="" class="modal_label"> Коментар</label>
+          <textarea
+            class="modal_comment"
+            name=""
+            id=""
+            type="text"
+            placeholder="Введіть текст"
+            required
+          ></textarea>
+          <div class="modal_label-confirm">
+            <input type="checkbox" class="input_checkbox" required />
+
+            <label for="" class="modal_checkbox">
+              Погоджуюся з розсилкою та приймаю
+              <a href="" class="modal_link">Умови договору</a>
+            </label>
+          </div>
+          <button class="modal_button">Відправити</button>
+        </form>
+      </div>
+      <section class="menu">
+        <div class="menu__backdrop is-hidden" data-menu>
+          <div class="menu__container">
+            <button class="menu__btn__close" data-menu-close>
+              <svg class="menu__icon">
+                <use href="./img/icons.svg#X"></use>
+              </svg>
+            </button>
+            <nav class="menu__nav">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="./index.html" class="menu__link">Студія</a>
+                </li>
+                <li class="menu__item">
+                  <a href="./portfolio.html" class="menu__link">Портфоліо</a>
+                </li>
+                <li class="menu__item">
+                  <a href="" class="menu__link">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="menu__contact">
+              <ul class="menu__contact__list">
+                <li class="menu__contact__item">
+                  <a href="tel:+380961111111" class="menu__contact__link-tell"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+                <li class="menu__contact__item">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="menu__contact__link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="menu__box">
+              <ul class="menu__socials">
+                <li class="menu__social">
+                  <a href="" class="menu__socials__link">Instagram</a>
+                </li>
+                <li class="menu__social">
+                  <a href="" class="menu__socials__link">Twitter</a>
+                </li>
+                <li class="menu__social">
+                  <a href="" class="menu__socials__link">Facebook</a>
+                </li>
+                <li class="menu__social">
+                  <a href="" class="menu__socials__link">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-
-<div class="menu">
-  
-</div>
-
-
-
-
-<a class="button-scroll" href="#header"><svg class="photo-scroll"><use href="./img/icons.svg#icon-scroll-up"></use></svg></a>
-    <script src="./index.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    
+      </section>
+      <a class="button-scroll" href="#header"
+        ><svg class="photo-scroll">
+          <use href="./img/icons.svg#icon-scroll-up"></use></svg></a>
+      <script src="./index.js"></script>
+      <script src="./menu.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+    </div>
   </body>
 </html>
