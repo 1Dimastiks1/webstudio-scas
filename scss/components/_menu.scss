@@ -9,13 +9,14 @@
     z-index: 10;
     width: 100vw;
   }
+
   .is-hidden {
     opacity: 0;
     pointer-events: none;
   }
+
   &__container {
     background: #fff;
-
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -47,19 +48,13 @@
   &__item {
   }
   &__link {
-    @include text(
-     
-      $size: 40px,
-      $spacing: 0.8px,
-      $weight: 500
-    );
+    @include text($size: 40px, $spacing: 0.8px, $weight: 500);
   }
   &__link:hover {
     color: $link-color;
   }
   &__contact {
     margin-top: auto;
-
   }
   &__contact__list {
     display: flex;
@@ -104,4 +99,3 @@
     );
   }
 }
-
